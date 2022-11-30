@@ -167,3 +167,81 @@
 // console.log(findVowels('hello')) //2
 // console.log(findVowels('aaaooo')) //6
 // console.log(findVowels('why')) //0
+
+
+//9
+// const classNames = ['header', 'menu', 'menu-item', 'menu-item', 'menu-item', 'footer', 'menu' , 'link', 'link', 'link' , 'link'];
+// for(let i = 0; i < classNames.length; i++) {
+//     if(classNames[i] === classNames[i - 1]) {
+//         classNames.splice(i, 1)
+//         i--;
+//     }
+// }
+
+// console.log(classNames);
+
+
+//10
+// const numbers = (number) => {
+//     const minMax = [];
+
+//     const minValue = number.sort((a, b) => a - b)[0];
+//     minMax.push(minValue)
+//     const maxValue = number.sort((a, b) => b - a)[0];
+//     minMax.push(maxValue)
+
+//     return minMax
+// }
+// console.log(numbers([20, 5, 10, -100, 1, 9, 5, 500]))
+
+
+
+//11
+// let test = true
+// test ? console.log('Неверно') : console.log('Верно');
+
+
+//12
+// let number;
+// let data;
+// if(data === true) { number = 3}
+// else {number = 5}
+
+// Рефакторинг кода
+// data ? number = 3 : number = 5;
+// console.log(number);
+
+
+//13
+// let numbers = [-5, 10, 55, -1, 22, -4, 36, -45]
+// let minus = []
+// for (num of numbers){
+//     num < 0 ? minus.push(num) : ''
+// }
+// console.log(minus)
+// let minus = numbers.filter(a => a < 0)
+// console.log(minus)
+
+
+//14
+// let filterFalses = [false, 45, 'str', null, 0, 1, undefined, 0]
+// let typeWasFalse = filterFalses.filter(falsy => falsy==false)
+// console.log(typeWasFalse);
+
+
+//таблица умножения
+// for (i = 1; i <= 10; i++){
+//     console.log('№' + i);
+//     for (j = 1; j <= 10; j++){
+//         console.log(`${i} * ${j} = ${i*j} `);
+//     }
+//     console.log(" ");
+// }
+
+
+//15
+const numbersInReverse = (num) => {
+    let reverseNums = [...num.toString()].map(Number).sort((a, b) => b - a);
+    return reverseNums;
+}
+console.log(numbersInReverse(12358))
