@@ -224,8 +224,8 @@
 
 
 //14
-// let filterFalses = [false, 45, 'str', null, 0, 1, undefined, 0]
-// let typeWasFalse = filterFalses.filter(falsy => falsy==false)
+// let filterFalses = [false, 45, 'str', null, 0, 1, undefined, 0];
+// let typeWasFalse = filterFalses.filter(falsy => falsy == false);
 // console.log(typeWasFalse);
 
 
@@ -240,8 +240,50 @@
 
 
 //15
-const numbersInReverse = (num) => {
-    let reverseNums = [...num.toString()].map(Number).sort((a, b) => b - a);
-    return reverseNums;
-}
-console.log(numbersInReverse(12358))
+// const numbersInReverse = (num) => {
+//     let reverseNums = [...num.toString()].map(Number).sort((a, b) => b - a);
+//     return reverseNums;
+// }
+// console.log(numbersInReverse(12358))
+
+
+
+//16
+// const yearOfBirth = prompt('Год вашего рождения');
+// const thisYear = prompt('Текущий год');
+// console.log(thisYear - yearOfBirth);
+
+
+//17
+// const arr = [1, 2, 3, 4];
+// const arrKv = []
+// for(let i = 1; i <= arr.length; i++) {
+//     const arrSort = (i ** 2);   
+//     arrKv.push(arrSort)
+// }
+// console.log(arrKv)
+
+
+//18
+// const firstNum = +prompt('Введите первое число');
+// const secondNum = +prompt('Введите второе число');
+// const sum = firstNum + secondNum;
+// console.log(sum)
+
+// while (sum) {
+//     const total = +prompt('Сумма введеных чисел ?')
+//     if (total === 'exit') {
+//         break;
+//     } else if (total === sum) {
+//         alert('Верно')
+//         break
+//     }
+// }
+
+
+//19
+// const data = [1, 2, 3];
+// function myFunc(arr) {
+//     return arr = arr.reverse();
+// }
+// console.log(myFunc(data));
