@@ -283,9 +283,9 @@
 //21
 // let count = 0;
 // const helloWorld = () => {
-//     if(count === 5) return alert('done');
+//     if(count === 5) return console.log('done');
 //     count++
-//     helloWorld(alert('Hello world'))
+//     helloWorld(console.log('Hello world'))
 // }
 // helloWorld();
 
@@ -315,3 +315,44 @@
 // console.log(comUrl('youtube'));
 
 // console.log(ruUrl('yandex'));
+
+
+//24
+// const highAndLow = (number) => {
+//     let num = number.split(' ')
+//     console.log(`Минимальное значение: ${Math.min(...num)}`);
+//     console.log(`Максимальное значение: ${Math.max(...num)}`);
+// }
+// highAndLow('1 2 3 6')
+
+
+//25
+// const arg = (...arguments) => {
+//     return arguments.length
+// }
+// console.log(arg(1, 2, 6));
+
+
+//26
+// const createPhoneNumber = (...numbers) => {
+//    let city = numbers.slice(0, 3).join('');
+//    let phone = `${numbers.slice(3,6).join('')}-${numbers.slice(6,10).join('')}`;
+//    let number = `(${city}) ${phone}`
+//    return number
+// }
+// console.log(createPhoneNumber(1,2,3,4,5,6,7,8,9));
+
+
+//27
+// const square = (n) => {
+//    return Math.pow(n , 2)
+// }
+// console.log(square(3));
+
+//28
+// function nthEven(n) {
+//     return n * 2 - 2
+// }
+// console.log(nthEven(1)) //0
+// console.log(nthEven(100)) // 198
+// console.log(nthEven(3)) // 4
